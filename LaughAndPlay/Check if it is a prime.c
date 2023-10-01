@@ -1,7 +1,7 @@
 #include <stdio.h>
 int main(){
     int n, i = 1;
-    printf("请输入一个数：")
+    printf("请输入一个数：");
     scanf("%d", &n);
     while ( n > 1 ){
         if ( n / i == 1 ){
