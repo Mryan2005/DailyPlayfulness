@@ -1,0 +1,18 @@
+// fine the sum of the first N terms of the factorial sequences
+// 1! + 2! + 3! + 4! + 5! + ... + N!
+int factorial(int x) {
+    int result;
+    for(int i = x; x > 0; x--) {
+        result *= x;
+    }
+    return result;
+}
+int main() {
+    int N;
+    scanf("%d",&N);
+    int sum;
+    for (int i = 1; i <= N; i++) {
+        sum +=factorial(i);
+    }
+    printf("%d",sum);
+}

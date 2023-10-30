@@ -58,5 +58,8 @@
   "C_Cpp_Runner.msvcSecureNoWarnings": false,
   "editor.suggest.snippetsPreventQuickSuggestions": false,
   "aiXcoder.showTrayIcon": true,
-  "editor.suggestSelection": "recentlyUsedByPrefix"
+  "editor.suggestSelection": "recentlyUsedByPrefix",
+  "files.associations": {
+    "lab 2-5-4": "c"
+  }
 }
