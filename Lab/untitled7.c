@@ -1,20 +1,13 @@
 #include <stdio.h>
-int a = 1;
-int y = 0;
-int q = 1;
-int c = 1;
-int f(int x) {
-	y = 1;
-}
-
 int main() {
-	for(int i = 1; i <= 10; i++) {
-		a++;
+	int a[10] = {1,2};
+	auto int b[10] = {1,2};
+	printf("这是数组a\n");
+	for(int i = 0; i < 10; i++) {
+		printf("a[%d] = %d\n",i,a[i]);
 	}
-	if(a == 10) {
-		c = 2;
+	printf("这是数组b\n");
+	for(int i = 0; i < 10; i++) {
+		printf("b[%d] = %d\n",i,b[i]);
 	}
-	f(a);
-	printf("a = %d, c = %d, q = %d, y = %d",a,c,q,y);
-	return 0;
 }
