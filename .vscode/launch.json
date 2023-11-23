@@ -8,8 +8,8 @@
       "args": [],
       "stopAtEntry": false,
       "console": "externalTerminal",
-      "cwd": "d:/project/DailyPlayfulness/LaughAndPlay",
-      "program": "d:/project/DailyPlayfulness/LaughAndPlay/build/Debug/outDebug"
+      "cwd": "d:/project/DailyPlayfulness/Lab",
+      "program": "d:/project/DailyPlayfulness/Lab/build/Debug/outDebug"
     }
   ]
 }

@@ -1,22 +1,24 @@
 #include <stdio.h>
-int isprime(long int x) {
-	int y = 1;
-	for (long int i = 2; i <= x/2; i++) {
-		if(x % i == 0){
-			y = 0;
-			break;
+int max(int x[3]) {
+	int temp;
+	for (int i = 0; i < 3; i++) {
+		if(x[i] <= x[i+1]) {
+			temp = x[i];
+			x[i+1] = temp;
+			x[i] = x[i+1];
 		}
 	}
-	return y;
+	for (int i = 3; i > 0; i--) {
+		if(x[i] <= x[i-1]) {
+			temp = x[i];
+			x[i-1] = temp;
+			x[i] = x[i-1];
+		}
+	}
+	for(int i = 0; i < 3; i++)
+		printf("%d",x[i]);
 }
 int main() {
-	long int N;
-	scanf("%ld",&N);
-	for(long int p = 2; p <= N; p++) {
-		for(long int q = p;q <= N; q++) {
-			if(p + q == N && isprime(q) && isprime(q)){
-				printf("%ld = %ld + %ld\n",N,p,q);
-			}
-		}
-	}
+	int x[3] = {2,0,7};
+	max(x);
 }
