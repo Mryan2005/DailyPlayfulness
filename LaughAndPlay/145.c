@@ -1,0 +1,18 @@
+#include <stdio.h>
+int *f(void);
+void g(void);
+int main() {
+    int *p = f();
+    printf("*p = %d", *p);
+    g();
+    printf("*p = %d", *p);
+    return 0;
+}
+int *f(void) {
+    int i = 12;
+    return &i;
+}
+void g(void) {
+    int k = 24;
+    printf("k = %d\n", k);  
+}

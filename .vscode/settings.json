@@ -60,6 +60,12 @@
   "aiXcoder.showTrayIcon": true,
   "editor.suggestSelection": "recentlyUsedByPrefix",
   "files.associations": {
-    "lab 2-5-4": "c"
+    "lab 2-5-4": "c",
+    "algorithm": "c",
+    "typeinfo": "c",
+    "type_traits": "c",
+    "limits": "c",
+    "utility": "c",
+    "xutility": "c"
   }
 }
